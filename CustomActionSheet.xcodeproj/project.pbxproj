@@ -21,9 +21,9 @@
 		A31A1266187F1A7800DE9A60 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A31A1248187F1A7800DE9A60 /* UIKit.framework */; };
 		A31A126E187F1A7800DE9A60 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = A31A126C187F1A7800DE9A60 /* InfoPlist.strings */; };
 		A31A1270187F1A7800DE9A60 /* CustomActionSheetTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A31A126F187F1A7800DE9A60 /* CustomActionSheetTests.m */; };
-		A36B34711885A7F800D89106 /* PSViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A36B34701885A7F800D89106 /* PSViewController.m */; };
 		A36B34791885A80000D89106 /* SGMapData.m in Sources */ = {isa = PBXBuildFile; fileRef = A36B34751885A80000D89106 /* SGMapData.m */; };
 		A36B347A1885A80000D89106 /* SGMapActionSheet.m in Sources */ = {isa = PBXBuildFile; fileRef = A36B34781885A80000D89106 /* SGMapActionSheet.m */; };
+		A36B347E1885B53300D89106 /* PSViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A36B347D1885B53300D89106 /* PSViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,12 +55,12 @@
 		A31A126B187F1A7800DE9A60 /* CustomActionSheetTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "CustomActionSheetTests-Info.plist"; sourceTree = "<group>"; };
 		A31A126D187F1A7800DE9A60 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		A31A126F187F1A7800DE9A60 /* CustomActionSheetTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CustomActionSheetTests.m; sourceTree = "<group>"; };
-		A36B346F1885A7F800D89106 /* PSViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PSViewController.h; sourceTree = "<group>"; };
-		A36B34701885A7F800D89106 /* PSViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PSViewController.m; sourceTree = "<group>"; };
 		A36B34741885A80000D89106 /* SGMapData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SGMapData.h; sourceTree = "<group>"; };
 		A36B34751885A80000D89106 /* SGMapData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SGMapData.m; sourceTree = "<group>"; };
 		A36B34771885A80000D89106 /* SGMapActionSheet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SGMapActionSheet.h; sourceTree = "<group>"; };
 		A36B34781885A80000D89106 /* SGMapActionSheet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SGMapActionSheet.m; sourceTree = "<group>"; };
+		A36B347C1885B53300D89106 /* PSViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PSViewController.h; sourceTree = "<group>"; };
+		A36B347D1885B53300D89106 /* PSViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PSViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -120,8 +120,8 @@
 		A31A124A187F1A7800DE9A60 /* CustomActionSheet */ = {
 			isa = PBXGroup;
 			children = (
+				A36B347B1885B53300D89106 /* ViewControllers */,
 				A36B34721885A80000D89106 /* MapActionsSheet */,
-				A36B346E1885A7F800D89106 /* ViewComtroller */,
 				A31A1253187F1A7800DE9A60 /* PSAppDelegate.h */,
 				A31A1254187F1A7800DE9A60 /* PSAppDelegate.m */,
 				A31A1256187F1A7800DE9A60 /* Main.storyboard */,
@@ -161,15 +161,6 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		A36B346E1885A7F800D89106 /* ViewComtroller */ = {
-			isa = PBXGroup;
-			children = (
-				A36B346F1885A7F800D89106 /* PSViewController.h */,
-				A36B34701885A7F800D89106 /* PSViewController.m */,
-			);
-			path = ViewComtroller;
-			sourceTree = "<group>";
-		};
 		A36B34721885A80000D89106 /* MapActionsSheet */ = {
 			isa = PBXGroup;
 			children = (
@@ -195,6 +186,15 @@
 				A36B34781885A80000D89106 /* SGMapActionSheet.m */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		A36B347B1885B53300D89106 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				A36B347C1885B53300D89106 /* PSViewController.h */,
+				A36B347D1885B53300D89106 /* PSViewController.m */,
+			);
+			path = ViewControllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -298,9 +298,9 @@
 			files = (
 				A36B34791885A80000D89106 /* SGMapData.m in Sources */,
 				A31A1251187F1A7800DE9A60 /* main.m in Sources */,
-				A36B34711885A7F800D89106 /* PSViewController.m in Sources */,
 				A36B347A1885A80000D89106 /* SGMapActionSheet.m in Sources */,
 				A31A1255187F1A7800DE9A60 /* PSAppDelegate.m in Sources */,
+				A36B347E1885B53300D89106 /* PSViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
