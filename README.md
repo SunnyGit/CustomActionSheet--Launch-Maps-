@@ -8,7 +8,9 @@ It is build to launch maps from you native iOS apps using a action sheet. It wil
      //setting data   
     SGMapData *data = [[SGMapData alloc] init];
     data.mapDatatype = SGMapDataTypeDirections;  
-    data.sourceCoordinates = CLLocationCoordinate2DMake(29.38265, -95.32355);      data.destinationCoordinates = CLLocationCoordinate2DMake(44.314, -85.606);       data.zoom = 12;
+    data.sourceCoordinates = CLLocationCoordinate2DMake(29.38265, -95.32355);
+    data.destinationCoordinates = CLLocationCoordinate2DMake(44.314, -85.606);
+    data.zoom = 12;
    
     self.actionSheet.mapData = data;    
     [_actionSheet showActionSheetInView:self.view];
