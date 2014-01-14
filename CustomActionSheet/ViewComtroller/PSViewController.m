@@ -21,7 +21,7 @@
 
 - (void)viewDidAppear:(BOOL)animated {
     [super viewDidAppear:animated];
-    self.actionSheet = [[SGMapActionSheet alloc] initWithTitle:@"TIt"];
+    self.actionSheet = [[SGMapActionSheet alloc] initWithTitle:@"Open Locations using"];
     //setting data
     SGMapData *data = [[SGMapData alloc] init];
     data.mapDatatype = SGMapDataTypeDirections;
