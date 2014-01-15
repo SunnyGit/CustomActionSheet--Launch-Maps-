@@ -23,26 +23,26 @@ static NSInteger const kZoomDefault = 15;
     switch (self.mapDatatype) {
         case SGMapDataTypeSearchText:
             return [NSString
-                    stringWithFormat:@"q=%@&zoom=%ld",[self noSpaceTextWithText:_searchText]
+                    stringWithFormat:@"q=%@&zoom=%d",[self noSpaceTextWithText:_searchText]
                                                    ,_zoom];
         case SGMapDataTypeCoordinates:
             return [NSString
-                    stringWithFormat:@"center=%f,%f&zoom=%ld",_searchCoordinates.latitude
+                    stringWithFormat:@"center=%f,%f&zoom=%d",_searchCoordinates.latitude
                                                              ,_searchCoordinates.longitude,_zoom];
         case SGMapDataTypeDirections:
             return [NSString
-                    stringWithFormat:@"saddr=%@&daddr=%@&zoom=%ld",[self obtaintSourceLocation]
+                    stringWithFormat:@"saddr=%@&daddr=%@&zoom=%d",[self obtaintSourceLocation]
                                                                   ,[self obtainDestinationLocation]
                                                                   ,_zoom];
         case SGMapDataTypeSearchTextWithCenter:
             return [NSString
-                    stringWithFormat:@"q=%@&center=%f,%f&zoom=%ld",[self noSpaceTextWithText:_searchText]
+                    stringWithFormat:@"q=%@&center=%f,%f&zoom=%d",[self noSpaceTextWithText:_searchText]
                                                                   ,_searchCoordinates.latitude
                                                                   ,_searchCoordinates.longitude
                                                                   ,_zoom];
         case SGMapDataTypeDirectionsWithCenter:
             return [NSString
-                    stringWithFormat:@"saddr=%@&daddr=%@&center=%f,%f&zoom=%ld",[self obtaintSourceLocation]
+                    stringWithFormat:@"saddr=%@&daddr=%@&center=%f,%f&zoom=%d",[self obtaintSourceLocation]
                                                                   ,[self obtainDestinationLocation]
                                                                   ,_searchCoordinates.latitude
                                                                   ,_searchCoordinates.longitude
@@ -79,11 +79,11 @@ static NSInteger const kZoomDefault = 15;
     switch (self.mapDatatype) {
         case SGMapDataTypeSearchText:
             return [NSString
-                    stringWithFormat:@"q=%@&z=%ld",[self noSpaceTextWithText:_searchText]
+                    stringWithFormat:@"q=%@&z=%d",[self noSpaceTextWithText:_searchText]
                     ,_zoom];
         case SGMapDataTypeCoordinates:
             return [NSString
-                    stringWithFormat:@"sll==%f,%f&zoom=%ld",_searchCoordinates.latitude
+                    stringWithFormat:@"sll==%f,%f&zoom=%d",_searchCoordinates.latitude
                     ,_searchCoordinates.longitude,_zoom];
         case SGMapDataTypeDirections:
             return [NSString
@@ -91,13 +91,13 @@ static NSInteger const kZoomDefault = 15;
                     ,[self obtainDestinationLocation]];
         case SGMapDataTypeSearchTextWithCenter:
             return [NSString
-                    stringWithFormat:@"q=%@&ll=%f,%f&zoom=%ld",[self noSpaceTextWithText:_searchText]
+                    stringWithFormat:@"q=%@&ll=%f,%f&zoom=%d",[self noSpaceTextWithText:_searchText]
                     ,_searchCoordinates.latitude
                     ,_searchCoordinates.longitude
                     ,_zoom];
         case SGMapDataTypeDirectionsWithCenter:
             return [NSString
-                    stringWithFormat:@"saddr=%@&daddr=%@&ll=%f,%f&zoom=%ld",[self obtaintSourceLocation]
+                    stringWithFormat:@"saddr=%@&daddr=%@&ll=%f,%f&zoom=%d",[self obtaintSourceLocation]
                     ,[self obtainDestinationLocation]
                     ,_searchCoordinates.latitude
                     ,_searchCoordinates.longitude
