@@ -18,4 +18,4 @@ It is build to launch maps from you native iOS apps using a action sheet. It wil
 SGMapData has different attributes like search text, search coordinates, source location (accepts string),destination location (accepts string). The data you provide will depend on type map data type. For instance if you set mapDataType to SGMapDataTypeSearchText then you should make sure that you are providing the search Text.
 
 ![alt tag](Screenshots/actionSheet.png)
-![alt tag](Screenshots/AppleMap1.png)  
+  
